@@ -13,11 +13,14 @@
     <script src="https://kit.fontawesome.com/c66141617f.js" crossorigin="anonymous"></script>
     <!-- external vanilla css -->
     <link rel="stylesheet" href="style.css">
+    <!-- animate.style cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
 <body>
-    <header class="container-fluid pb-5" style="background-color: #FFFBF0;">
+
+    <header id="header" class="container-fluid pb-5" style="background-color: #FFFBF0;">
         <!-- navigation bar is here -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
@@ -30,17 +33,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#header">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Product</a>
+                            <a class="nav-link" href="#women">Woman's jacket</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
+                            <a class="nav-link" href="#men">Men's jacket</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact us</a>
+                            <a class="nav-link" href="#footer">Footer</a>
                         </li>
+
                     </ul>
 
                 </div>
@@ -50,23 +54,23 @@
             <div class="row row-cols-1 row-cols-lg-2 flex-column-reverse flex-md-column-reverse  flex-sm-column-reverse flex-lg-row align-items-center justify-content-center">
                 <div class=" col">
                     <h2 class="fs-1">
-                        <span style="color: #FABE4C;">BE THE PENGUINS </span>
-                        <br> <span style="color: #363958;">OF WINTER</span>
+                        <h1 style="color: #FABE4C;" class="animate__animated animate__fadeInLeft">BE THE PENGUINS </h1>
+                        <h2 style="color: #363958;" class="animate__animated animate__flipInX"> OF WINTER</h2>
                     </h2>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere ipsa atque mollitia minima velit ipsam rerum facilis nihil ex.</p>
                     <button class="btn text-white "> <i class="fas fa-shopping-cart"></i> BUY NOW</button>
                 </div>
                 <div class="col pe-2 ">
-                    <img src="images/me-with-design-bg.png" class="img-fluid  " alt="">
+                    <img src="images/me-with-design-bg.png" class="img-fluid animate__animated animate__lightSpeedInRight " alt="">
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section>
+        <section id="women">
             <div class="container ">
                 <h2 class="m-4" style="color: #363958;">WOMAN's JACKET</h2>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 animate__animated animate__fadeInLeft">
                     <div class="col">
                         <div class="card  border-0 shadow p-2">
 
@@ -115,7 +119,7 @@
                 </div>
             </div>
         </section>
-        <section class="container">
+        <section class="container" id="men">
             <h2 class="m-4" style="color: #363958;"> MEN's JACKET</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
                 <div class="col rounded">
@@ -161,7 +165,7 @@
                 </div>
             </div>
         </section>
-        <section class="container my-5">
+        <section id="footer" class="container my-5">
             <div class="row">
                 <div class=" col-md-12 col-lg-6">
                     <div class="d-flex shadow mt-3 flex-column flex-md-row justify-content-center align-items-lg-center p-2">
@@ -179,8 +183,8 @@
                             <img src="images/box.png" class="w-25 mx-auto d-block" alt="">
                         </div>
                         <div>
-                            <h4>Find the perfect fit</h4>
-                            <p>Everybody is different, which is why we offer styles for every body.</p>
+                            <h4>Free Exchanges </h4>
+                            <p>One of the many reasons you can shop with peace of mind.</p>
                         </div>
                     </div>
                     <div class="d-flex shadow mt-3 flex-column flex-md-row justify-content-center align-items-lg-center p-2">
@@ -190,8 +194,8 @@
 
                         </div>
                         <div>
-                            <h4>Find the perfect fit</h4>
-                            <p>Everybody is different, which is why we offer styles for every body.</p>
+                            <h4>Contact our seller</h4>
+                            <p>They are here to help you. That's quite literally what we pay them for.</p>
                         </div>
                     </div>
                 </div>
@@ -200,6 +204,7 @@
                 </div>
             </div>
         </section>
+
 
 
 
